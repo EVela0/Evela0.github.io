@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Contact and Survey Form</title>
+	<link href="styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<form action="#" method="GET">
+		<h3>Connect with Us</h3>
+		<p>To get in touch with me, just fill out the form below and I will get back to you as soon as possible.</p>
+		<!-- So the Form Data doesn't lead to another file -->
+		<fieldset>
+			<legend>For Email Correspondence</legend>
+			<!-- Text inputs -->
+			<label>Name:<br />
+				<input type="Name" name="Name" />
+			</label><br />
+			<label>Email:<br />
+				<input type="Email" name="Email" />
+			</label><br />
+			<!-- Dropdown Select -->
+			<p>What is the subject of your email?
+				<br />
+				<select name="choices">
+					<option value="General Inquiry">General Inquiry</option>
+					<option value="Partnership Opportunities">Partnership Opportunities</option>
+					<option value="Other">Other</option>
+				</select>
+			</p>
+			<p>Please enter your message below:
+				<br />
+				<textarea name="comment" cols="20" rows="4"></textarea>
+			</p>
+			<!-- Submit Button -->
+			<input type="submit" value="Submit" />
+			<!-- Submit Button -->
+			<input type="Reset" value="Reset" />
+		</fieldset>
+	</form>
+	<form>
+		<h3>Voice Your Thoughts</h3>
+		<p>Your feedback is valued, please take a moment to share your thoughts to help me improve as needed.</p>
+		<fieldset>
+			<!-- Dropdown Select -->
+			<p>How did you come across my portfolio?
+				<br />
+				<select name="choices">
+					<option value="Google">Google</option>
+					<option value="Referral">Referral</option>
+					<option value="Social Media">Social Media</option>
+					<option value="Other">Other</option>
+				</select>
+			</p>
+			<!-- Radio Buttons -->
+			<p>Please provide feedback of your overall experience on my site.
+				<br />
+				<input type="radio" name="rating" value="1" checked="checked" /> 1
+				<input type="radio" name="rating" value="2" /> 2
+				<input type="radio" name="rating" value="3" /> 3
+				<input type="radio" name="rating" value="4" /> 4
+				<input type="radio" name="rating" value="5" /> 5
+			</p>
+			<p>Any additional comments?
+				<br />
+				<textarea name="comment" cols="22" rows="6"></textarea>
+			</p>
+			<!-- Submit Button -->
+			<input type="submit" value="Submit" />
+			<!-- Submit Button -->
+			<input type="Reset" value="Reset" />
+		</fieldset>
+	</form>
+</body>
+
+</html>
